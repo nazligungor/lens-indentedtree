@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11349e77-f1b3-4d0b-bc0d-eb1eab752a3a" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3427">
+              <caret line="323" column="66" selection-start-line="323" selection-start-column="66" selection-end-line="323" selection-end-column="66" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/SampleTest.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/lens.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/SampleUtilTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1485">
+              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>diagonal</find>
+      <find>color</find>
+      <find>click</find>
+      <find>svg</find>
+      <find>active</find>
+      <find>setDetails</find>
+      <find>backgroun</find>
+      <find>backgroundclick</find>
+      <find>maxDep</find>
+      <find>width</find>
+      <find>height</find>
+      <find>duration</find>
+      <find>LENS_ELEM</find>
+      <find>tree</find>
+      <find>aspect</find>
+      <find>loading</find>
+      <find>aspectSorter</find>
+      <find>rank</find>
+      <find>sample</find>
+      <find>nodesorter</find>
+      <find>show</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Config.js" />
+        <option value="$PROJECT_DIR$/src/d3.v3.min.js" />
+        <option value="$PROJECT_DIR$/src/TreeUtils.js" />
+        <option value="$PROJECT_DIR$/src/template/progress.handlebars" />
+        <option value="$PROJECT_DIR$/src/template/sample-details.handlebars" />
+        <option value="$PROJECT_DIR$/src/template/subject-details.handlebars" />
+        <option value="$PROJECT_DIR$/src/lens.css" />
+        <option value="$PROJECT_DIR$/test/SampleTest.js" />
+        <option value="$PROJECT_DIR$/test/SampleUtilTest.js" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/README.md" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/src/Config.js" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/test/SampleUtilTest.js" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/src/Utils.js" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/src/main.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="46" />
+    <option name="y" value="31" />
+    <option name="width" value="1165" />
+    <option name="height" value="808" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lens-indentedtree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lens-indentedtree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lens-indentedtree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lens-indentedtree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lens-indentedtree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lens-indentedtree" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="$PROJECT_DIR$/node_modules/jscs" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Mocha.SampleTest for main.js &gt; .add event listeners">
+    <configuration name="SampleTest for main.js &gt; .add event listeners" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/SampleTest.js</test-file>
+      <test-names>
+        <name value="SampleTest for main.js &gt; " />
+        <name value="add event listeners" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="SampleTest for main.js &gt; " type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/SampleTest.js</test-file>
+      <test-names>
+        <name value="SampleTest for main.js &gt; " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.SampleTest for main.js &gt; .add event listeners" />
+        <item itemvalue="Mocha.SampleTest for main.js &gt; " />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11349e77-f1b3-4d0b-bc0d-eb1eab752a3a" name="Default Changelist" comment="" />
+      <created>1562881129299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562881129299</updated>
+      <workItem from="1562881130459" duration="394000" />
+      <workItem from="1562967841164" duration="141000" />
+      <workItem from="1562969936362" duration="1008000" />
+      <workItem from="1563573781967" duration="17272000" />
+      <workItem from="1563907183558" duration="24998000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 15h 10m 00s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 15h 12m 02s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 15h 12m 27s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 15h 12m 43s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 16h 14m 02s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 16h 14m 41s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 16h 15m 40s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.23 at 16h 17m 27s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.24 at 11h 19m 39s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="SampleTest_for_main_js____add_event_listeners - 2019.07.24 at 11h 20m 08s.xml">
+      <configuration name="SampleTest for main.js &gt; .add event listeners" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43813000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="46" y="31" width="1165" height="808" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28321677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20170757" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25482234" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286517" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36173186" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/template/main.handlebars">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/d3.v3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/template/sample-details.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding>
+            <element signature="e#359#365#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/template/subject-details.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/multiline.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/template/progress.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/NodeJS/js/mocha-intellij/lib/mochaTreeUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-902" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/RealtimeChangeHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/SampleUtilTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/lens.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/SampleTest.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3427">
+          <caret line="323" column="66" selection-start-line="323" selection-start-column="66" selection-end-line="323" selection-end-column="66" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
