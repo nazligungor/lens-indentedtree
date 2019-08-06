@@ -18,10 +18,9 @@ h1 {
 }
 
 #loading {
-    position: absolute;
+    padding-top: 50px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .slds-spinner:before, .slds-spinner:after,
@@ -51,7 +50,7 @@ h1 {
     cursor: pointer;
     fill: #fff;
     fill-opacity: 0.5;
-    stroke: #3182bd;
+    stroke: #ffffff;
     stroke-width: 1.5px;
 }
 
@@ -64,6 +63,21 @@ h1 {
     fill: none;
     stroke: #ddd;
 }
+.legend-item {
+    margin-right: 5px;
+}
+.navbar-nav {
+    background-color: #ffffff;
+    color: #000000;
+}
+.col-xs-12{
+    background-color: #ffffff;
+}
+
+.nav{
+    background-color: #ffffff;
+}
+
 
 #detailsPanel {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

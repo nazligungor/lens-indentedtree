@@ -120,29 +120,17 @@ function aspectSorter(a, b) {
 function subjectSorter(subject1, subject2) {
   const string1 = subject1.sortBy || subject1.name;
   const string2 = subject2.sortBy || subject2.name;
-  return ascending(string1, string2);
+  return nameAscending(string1, string2);
 } // subjectSorter
 
-function ascending(a, b) {
-  if (a.toLowerCase() > b.toLowerCase()) {
-    return ONE;
-  } else if (a.toLowerCase() < b.toLowerCase()) {
-    return -ONE;
-  }
-} // ascending
 
-/**
- * Use this as the d3.partition sort comparator function. It will sort by
- * subject or sample name in ascending order, case-insensitive.
- *
- * @param {Object} a - the first node to compare
- * @param {Object} b - the second node to compare
- * @returns {Integer} - positive integer if a > b, negative integer if
- *  a < b, 0 if a === b
- */
 function nameAscending(a, b) {
   if (a && a.name && b && b.name) {
-    ascending(a.name, b.name);
+    if (a.name.toLowerCase() > b.name.toLowerCase()) {
+      return ONE;
+    } else if (a.toLowerCase() < b.toLowerCase()) {
+      return -ONE;
+    }
   }
 } // nameAscending
 
@@ -224,7 +212,6 @@ module.exports = {
 
     return retval;
   }, // nodeChildren
-
 
 
   nodeSorter,

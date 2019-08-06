@@ -8,9 +8,7 @@ module.exports = {
   MINIMUM_SEARCH_TERM_LENGTH: 2,
   duration: 400,
   TINY: 1e-6,
-  CIRCLE_NO_FILL_COLOR: '#fff',
-  CIRCLE_RADIUS: 5,
-  CIRCLE_RADIUS_LARGE: 7,
+  NO_FILL_COLOR: '#fff',
   LINE_WIDTH: '2px',
   BOLD_LINE_WIDTH: '4px',
   LABEL_OFFSET: 10,
@@ -42,4 +40,24 @@ module.exports = {
       }
     }
   },
+  "pageHeader": {
+    "legend": {
+      "Critical": {
+        "label": "Critical"
+      },
+      "Warning": {
+        "label": "Warning"
+      },
+      "Info": {
+        "label": "Info"
+      },
+      "OK": {
+        "label": "OK"
+      },
+    }
+  },
+  "progress": {
+    "heading": "Loading...",
+    "label": "Loading..."
+  }
 };

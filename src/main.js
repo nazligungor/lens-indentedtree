@@ -2,6 +2,8 @@
 // Add any "require" statements to import modules here, e.g.:
 'use strict';
 require('./lens.css');
+//require('./bootstrap.min.js'); // for bootstrap
+require('./bootstrap.min.css'); // bootstrap
 const u = require('./Utils');
 const conf = require('./Config');
 const d3 = require('./d3.v3.min');
@@ -9,6 +11,7 @@ const handlebars = require('handlebars-template-loader/runtime');
 const subjectTemplate = require('./template/subject-details.handlebars');
 const sampleTemplate = require('./template/sample-details.handlebars');
 const progressTemplate = require('./template/progress.handlebars');
+const pageHeader = require('./template/pageHeader.handlebars');
 const RealtimeChangeHandler = require('./RealtimeChangeHandler.js');
 require('./multiline.js');
 
@@ -23,7 +26,7 @@ let searchable = [];
 let root;
 let activeNode;
 let loading;
-let margin = {top: 30, right: 10, bottom: 20, left: 5},
+let margin = {top: 30, right: 10, bottom: 40, left: 20},
   barHeight = 20,
   barWidth = (width - margin.left - margin.right) * 0.8;
 //let duration = 400;
@@ -82,7 +85,7 @@ function setDetails(d) {
 } // setDetails
 
 function setDetailsPanelSizes() {
-  const lensTop = 24 + document.getElementById('lens')
+  const lensTop = 30 + document.getElementById('lens')
     .getBoundingClientRect().top;
   document.getElementById('searchInput').setAttribute('style',
     'left: ' + (width + 70) + 'px; ' +
@@ -186,12 +189,12 @@ function redraw(source) {
 
   // Update the nodes
   const node = svg.selectAll('g.node')
-    .data(nodes, (d) => d.id ? d.id : d.aspectId );
+    .data(nodes, (d) => d.id ? d.id : d.name.toLowerCase() );
 
   // Enter any new nodes at the parent's previous position.
   const nodeEnter = node.enter().append('g')
     .attr('class', 'node')
-    .attr('id', (d) => d.id ? d.id : d.aspectId )
+    .attr('id', (d) => d.id ? d.id : d.name.toLowerCase() )
     .attr('transform', function(d) { return 'translate(' + source.y0 + ',' + source.x0 + ')'; })
     .style('opacity', 0)
     .on('click', nodeClick)
@@ -205,7 +208,7 @@ function redraw(source) {
     .on('click', nodeClick)
     .style('fill', (d) =>
       (d._children && d._children.length > 0) ?
-        conf.color[d.status] : conf.CIRCLE_NO_FILL_COLOR);
+        conf.color[d.status] : conf.NO_FILL_COLOR);
 
   nodeEnter.append('text')
     .attr('dy', 3.5 + margin.top)
@@ -240,7 +243,7 @@ function redraw(source) {
 
   // Update the links
   const link = svg.selectAll('path.link')
-    .data(links, (d) => d.target.id ? d.target.id : d.target.aspectId );
+    .data(links, (d) => d.target.id ? d.target.id : d.target.name.toLowerCase() );
 
   // Enter any new links at the parent's previous position.
   link.enter().insert('path', 'g')
@@ -305,7 +308,7 @@ function preprocess(hier) {
   searchableNodes = tree.nodes(root);
   searchable = searchableNodes.map((n) => {
     return {
-      key: n.id ? n.id : n.aspectId,
+      key: n.id ? n.id : n.name.toLowerCase(),
       value: n.absolutePath || n.name,
     };
   });
@@ -321,14 +324,14 @@ function clearAll(d) {
 } // clearAll
 
 function show(evt) {
-  const usedId = evt.target.id ? evt.target.id : evt.target.aspectId;
+  const usedId = evt.target.id ? evt.target.id : evt.target.name.toLowerCase();
   if (!usedId) {
     return;
   }
 
   const tid = usedId.substring(conf.SEARCH_RESULT_ID_PFX.length);
   const found = searchableNodes.find((n) => {
-    const compareId = n.id ? n.id : n.aspectId;
+    const compareId = n.id ? n.id : n.name.toLowerCase();
     if (compareId === tid) {
       return n;
     }
@@ -456,21 +459,21 @@ const eventHandler = {
      * if needed, then call redraw only once after all the data manipulation is
      * done.
      */
-     'refocus.lens.realtime.change': (evt) => {
-      console.log(new Date(), 'refocus.lens.realtime.change',
-        'contains ' + evt.detail.length + ' changes');
-      if (Array.isArray(evt.detail) || evt.detail.length > 0) {
-        evt.detail.forEach((chg) => {
-          try {
-            RealtimeChangeHandler.handle(chg);
-          } catch (err) {
-            console.error(err);
-          }
-        })
-        // Now that we've processed all these changes, draw!
-        redraw(root);
-      }
-     }, // refocus.lens.realtime.change
+      'refocus.lens.realtime.change': (evt) => {
+       console.log(new Date(), 'refocus.lens.realtime.change',
+         'contains ' + evt.detail.length + ' changes');
+       if (Array.isArray(evt.detail) || evt.detail.length > 0) {
+         evt.detail.forEach((chg) => {
+           try {
+             RealtimeChangeHandler.handle(chg, root);
+           } catch (err) {
+             console.error(err);
+           }
+         })
+         // Now that we've processed all these changes, draw!
+         redraw(root);
+       }
+      }, // refocus.lens.realtime.change
   },
   window: {
     /**
@@ -562,6 +565,10 @@ const func = (lens = LENS_ELEMENT) => {
         eventTarget[target].addEventListener(eventType, eventHandler[target][eventType]);
       });
     });
+
+    //add header
+    LENS_ELEMENT.insertAdjacentHTML('beforeend', pageHeader(conf.pageHeader));
+
 
     // Add progress bar to display while waiting to receive the hierarchy.
     LENS_ELEMENT.insertAdjacentHTML('beforeend', progressTemplate(conf.progress));
