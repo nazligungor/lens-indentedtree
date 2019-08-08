@@ -7,7 +7,6 @@ module.exports = {
   SEARCH_RESULT_ID_PFX: 'li@',
   MINIMUM_SEARCH_TERM_LENGTH: 2,
   duration: 400,
-  TINY: 1e-6,
   NO_FILL_COLOR: '#fff',
   LINE_WIDTH: '2px',
   BOLD_LINE_WIDTH: '4px',

@@ -11,7 +11,7 @@ function preprocess(node){
   return util.childrenize(util.prepareHierarchyData(node));
 }
 
-function addSampleToHierarchy(data,subjectAbsolutePath, sample) {
+function addSample(data,subjectAbsolutePath, sample) {
   if(data.absolutePath === subjectAbsolutePath){
     if(data.samples){
       data.samples[sample.name] = sample;
@@ -26,29 +26,52 @@ function addSampleToHierarchy(data,subjectAbsolutePath, sample) {
 
   if(data.children){
     data.children.forEach((n) => {
-      addSampleToHierarchy(n, subjectAbsolutePath, sample);
+      addSample(n, subjectAbsolutePath, sample);
     });
   }
-  //return data;
+}
+
+function removeSample(data,subjectAbsolutePath, sample){
+  if(data.absolutePath === subjectAbsolutePath) {
+    if(data.samples){
+      delete data.samples[sample.name];
+    }
+  }
+
+  if (data.children){
+    data.children.forEach((n) => {
+      removeSample(n, subjectAbsolutePath,sample);
+    });
+  }
+}
+
+function updateSample(data, subjectAbsolutePath, sample){
+  if(data.absolutePath === subjectAbsolutePath){
+    if(data.samples && data.samples[sample.name]){
+      data.samples[sample.name] = sample;
+      data.samples[sample.name].sampleValue = sample.sampleValue;
+    }else{
+      addSample(data, subjectAbsolutePath, sample);
+    }
+  }
+  if(data.children){
+    data.children.forEach((n) => {
+      updateSample(n, subjectAbsolutePath, sample);
+    });
+  }
 }
 
 function onSampleAdd(sample, data) {
 	console.log(new Date(), 'onSampleAdd', sample);
-	//hierarchy = data
-  //subject = sample.name.split('|')[0]
-  //sample = change
-  //let root = preprocess(data);
   let subjectAbsolutePath = sample.name.split('|')[0];
   console.log('subject of sample ' + subjectAbsolutePath)
-  addSampleToHierarchy(data,subjectAbsolutePath,sample);
+  addSample(data,subjectAbsolutePath,sample);
  }
 
 function onSampleRemove(sample, data) {
 	console.log(new Date(), 'onSampleRemove', sample);
-	// TODO implement me!
-	// For example, you may need to preprocess and remove this sample from some
-	// data structure.
-
+  let subjectAbsolutePath = sample.name.split('|')[0];
+  removeSample(data, subjectAbsolutePath, sample);
 }
 
 function onSampleUpdate(change, data) {
@@ -56,6 +79,8 @@ function onSampleUpdate(change, data) {
 	// TODO implement me!
 	// For example, you may need to preprocess and update this sample in some
 	// data structure.
+  let subjectAbsolutePath = sample.name.split('|')[0];
+  updateSample(data, subjectAbsolutePath, change);
 }
 
 function onSubjectAdd(subject, data) {

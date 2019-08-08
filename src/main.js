@@ -566,7 +566,7 @@ const func = (lens = LENS_ELEMENT) => {
       });
     });
 
-    //add header
+    //add header/legend
     LENS_ELEMENT.insertAdjacentHTML('beforeend', pageHeader(conf.pageHeader));
 
 

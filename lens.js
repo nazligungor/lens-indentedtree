@@ -512,21 +512,21 @@
 	     * if needed, then call redraw only once after all the data manipulation is
 	     * done.
 	     */
-	     // 'refocus.lens.realtime.change': (evt) => {
-	     //  console.log(new Date(), 'refocus.lens.realtime.change',
-	     //    'contains ' + evt.detail.length + ' changes');
-	     //  if (Array.isArray(evt.detail) || evt.detail.length > 0) {
-	     //    evt.detail.forEach((chg) => {
-	     //      try {
-	     //        RealtimeChangeHandler.handle(chg, root);
-	     //      } catch (err) {
-	     //        console.error(err);
-	     //      }
-	     //    })
-	     //    // Now that we've processed all these changes, draw!
-	     //    redraw(root);
-	     //  }
-	     // }, // refocus.lens.realtime.change
+	      'refocus.lens.realtime.change': (evt) => {
+	       console.log(new Date(), 'refocus.lens.realtime.change',
+	         'contains ' + evt.detail.length + ' changes');
+	       if (Array.isArray(evt.detail) || evt.detail.length > 0) {
+	         evt.detail.forEach((chg) => {
+	           try {
+	             RealtimeChangeHandler.handle(chg, root);
+	           } catch (err) {
+	             console.error(err);
+	           }
+	         })
+	         // Now that we've processed all these changes, draw!
+	         redraw(root);
+	       }
+	      }, // refocus.lens.realtime.change
 	  },
 	  window: {
 	    /**
@@ -619,7 +619,7 @@
 	      });
 	    });
 
-	    //add header
+	    //add header/legend
 	    LENS_ELEMENT.insertAdjacentHTML('beforeend', pageHeader(conf.pageHeader));
 
 
@@ -1122,32 +1122,8 @@
 	} // childrenize
 
 	function nodeSorter(a, b) {
-	  // if (a.aspect && b.aspect) {
-	  //   return aspectSorter(a.aspect, b.aspect);
-	  // } else {
-	  //   return subjectSorter(a, b);
-	  // }
 	  return subjectSorter(a, b);
 	} // nodeSorter
-
-	function aspectSorter(a, b) {
-	  let ret;
-	  if (a.rank != null && b.rank != null) {
-	    ret = a.rank - b.rank;
-	  } else if (a.rank == null && b.rank == null) {
-	    ret = 0;
-	  } else if (a.rank == null && b.rank != null) {
-	    ret = 1;
-	  } else if (a.rank != null && b.rank == null) {
-	    ret = -1;
-	  }
-
-	  if (ret === 0) {
-	    ret = nameAscending(a, b);
-	  }
-
-	  return ret;
-	} // aspectSorter
 
 	function subjectSorter(subject1, subject2) {
 	  const string1 = subject1.sortBy || subject1.name;
@@ -1265,7 +1241,6 @@
 	  SEARCH_RESULT_ID_PFX: 'li@',
 	  MINIMUM_SEARCH_TERM_LENGTH: 2,
 	  duration: 400,
-	  TINY: 1e-6,
 	  NO_FILL_COLOR: '#fff',
 	  LINE_WIDTH: '2px',
 	  BOLD_LINE_WIDTH: '4px',
@@ -2725,23 +2700,71 @@
 	const util = __webpack_require__(8);
 	let realtime;
 
-	function processData(data) {
-	  realtime = (util.prepareHierarchyData(data));
+	function preprocess(node){
+	  return util.childrenize(util.prepareHierarchyData(node));
+	}
+
+	function addSample(data,subjectAbsolutePath, sample) {
+	  if(data.absolutePath === subjectAbsolutePath){
+	    if(data.samples){
+	      data.samples[sample.name] = sample;
+	      data.samples[sample.name].sampleValue = sample.sampleValue;
+	    }else {
+	      let newArr = {};
+	      newArr[sample.name] = sample;
+	      newArr[sample.name].samples = sample.sampleValue;
+	      data.samples = newArr;
+	    }
+	  }
+
+	  if(data.children){
+	    data.children.forEach((n) => {
+	      addSample(n, subjectAbsolutePath, sample);
+	    });
+	  }
+	}
+
+	function removeSample(data,subjectAbsolutePath, sample){
+	  if(data.absolutePath === subjectAbsolutePath) {
+	    if(data.samples){
+	      delete data.samples[sample.name];
+	    }
+	  }
+
+	  if (data.children){
+	    data.children.forEach((n) => {
+	      removeSample(n, subjectAbsolutePath,sample);
+	    });
+	  }
+	}
+
+	function updateSample(data, subjectAbsolutePath, sample){
+	  if(data.absolutePath === subjectAbsolutePath){
+	    if(data.samples && data.samples[sample.name]){
+	      data.samples[sample.name] = sample;
+	      data.samples[sample.name].sampleValue = sample.sampleValue;
+	    }else{
+	      addSample(data, subjectAbsolutePath, sample);
+	    }
+	  }
+	  if(data.children){
+	    data.children.forEach((n) => {
+	      updateSample(n, subjectAbsolutePath, sample);
+	    });
+	  }
 	}
 
 	function onSampleAdd(sample, data) {
 		console.log(new Date(), 'onSampleAdd', sample);
-		processData(data);
-		realtime.samples.push(sample.name);
-		realtime.samples[sample.name].sampleValue = sample.value;
+	  let subjectAbsolutePath = sample.name.split('|')[0];
+	  console.log('subject of sample ' + subjectAbsolutePath)
+	  addSample(data,subjectAbsolutePath,sample);
 	 }
 
 	function onSampleRemove(sample, data) {
 		console.log(new Date(), 'onSampleRemove', sample);
-		// TODO implement me!
-		// For example, you may need to preprocess and remove this sample from some
-		// data structure.
-
+	  let subjectAbsolutePath = sample.name.split('|')[0];
+	  removeSample(data, subjectAbsolutePath, sample);
 	}
 
 	function onSampleUpdate(change, data) {
@@ -2749,6 +2772,8 @@
 		// TODO implement me!
 		// For example, you may need to preprocess and update this sample in some
 		// data structure.
+	  let subjectAbsolutePath = sample.name.split('|')[0];
+	  updateSample(data, subjectAbsolutePath, change);
 	}
 
 	function onSubjectAdd(subject, data) {

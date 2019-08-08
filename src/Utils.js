@@ -90,32 +90,8 @@ function childrenize(n) {
 } // childrenize
 
 function nodeSorter(a, b) {
-  // if (a.aspect && b.aspect) {
-  //   return aspectSorter(a.aspect, b.aspect);
-  // } else {
-  //   return subjectSorter(a, b);
-  // }
   return subjectSorter(a, b);
 } // nodeSorter
-
-function aspectSorter(a, b) {
-  let ret;
-  if (a.rank != null && b.rank != null) {
-    ret = a.rank - b.rank;
-  } else if (a.rank == null && b.rank == null) {
-    ret = 0;
-  } else if (a.rank == null && b.rank != null) {
-    ret = 1;
-  } else if (a.rank != null && b.rank == null) {
-    ret = -1;
-  }
-
-  if (ret === 0) {
-    ret = nameAscending(a, b);
-  }
-
-  return ret;
-} // aspectSorter
 
 function subjectSorter(subject1, subject2) {
   const string1 = subject1.sortBy || subject1.name;

@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="308" column="35" lean-forward="true" selection-start-line="308" selection-start-column="35" selection-end-line="308" selection-end-column="35" />
+            <state relative-caret-position="8547">
+              <caret line="577" column="41" lean-forward="true" selection-start-line="577" selection-start-column="41" selection-end-line="577" selection-end-column="41" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/SampleTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/RealtimeChangeHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+            <state relative-caret-position="902">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -61,17 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2504">
-              <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/lens.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="145" column="26" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="37" />
+            <state relative-caret-position="-216">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -105,7 +96,6 @@
       <find>aspectSorter</find>
       <find>rank</find>
       <find>sample</find>
-      <find>show</find>
       <find>nodesorter</find>
       <find>aspectid</find>
       <find>ascending</find>
@@ -119,6 +109,7 @@
       <find>navbar</find>
       <find>navbar-fixed-top</find>
       <find>html</find>
+      <find>show</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -136,25 +127,25 @@
         <option value="$PROJECT_DIR$/../lens-indentedtree/README.md" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/test/SampleUtilTest.js" />
-        <option value="$PROJECT_DIR$/../lens-indentedtree/src/Utils.js" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/template/progress.handlebars" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/bootstrap.min.css.map" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/lens.css" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/template/pageHeader.handlebars" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/test/SampleTest.js" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/src/RealtimeChangeHandler.js" />
+        <option value="$PROJECT_DIR$/../lens-indentedtree/src/Utils.js" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/Config.js" />
         <option value="$PROJECT_DIR$/../lens-indentedtree/src/main.js" />
-        <option value="$PROJECT_DIR$/../lens-indentedtree/src/RealtimeChangeHandler.js" />
-        <option value="$PROJECT_DIR$/../lens-indentedtree/test/SampleTest.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="215" />
-    <option name="y" value="-1404" />
-    <option name="width" value="1569" />
-    <option name="height" value="1140" />
+    <option name="x" value="99" />
+    <option name="y" value="46" />
+    <option name="width" value="1310" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -167,6 +158,11 @@
             <path>
               <item name="lens-indentedtree" type="b2602c69:ProjectViewProjectNode" />
               <item name="lens-indentedtree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lens-indentedtree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lens-indentedtree" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lens-indentedtree" type="b2602c69:ProjectViewProjectNode" />
@@ -281,14 +277,11 @@
       <workItem from="1562967841164" duration="141000" />
       <workItem from="1562969936362" duration="1008000" />
       <workItem from="1563573781967" duration="17272000" />
-      <workItem from="1563907183558" duration="53912000" />
+      <workItem from="1563907183558" duration="59500000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SampleTest_for_RealTimChangeHandler_js_____onSampleAdd_should_be_called_for_a_sample_update - 2019.08.06 at 10h 07m 16s.xml">
-      <configuration name="SampleTest for RealTimChangeHandler.js  &gt; .onSampleAdd should be called for a sample update" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="SampleTest_for_RealTimChangeHandler_js_____onSampleAdd_should_be_called_for_a_sample_update - 2019.08.06 at 10h 07m 23s.xml">
       <configuration name="SampleTest for RealTimChangeHandler.js  &gt; .onSampleAdd should be called for a sample update" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -316,9 +309,12 @@
     <history-entry file="SampleTest_for_RealTimChangeHandler_js_____onSampleAdd_should_be_called_for_a_sample_update - 2019.08.06 at 10h 40m 32s.xml">
       <configuration name="SampleTest for RealTimChangeHandler.js  &gt; .onSampleAdd should be called for a sample update" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="SampleTest_for_RealTimChangeHandler_js_____onSampleAdd_should_be_called_for_a_sample_update - 2019.08.07 at 14h 47m 16s.xml">
+      <configuration name="SampleTest for RealTimChangeHandler.js  &gt; .onSampleAdd should be called for a sample update" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72727000" />
+    <option name="totallyTimeSpent" value="78315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,15 +326,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="215" y="-1404" width="1569" height="1140" extended-state="0" />
+    <frame x="99" y="46" width="1310" height="797" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.20930232" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.25135764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50066227" side_tool="true" weight="0.25135764" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3740458" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5148936" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25482234" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,7 +342,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29293892" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30212766" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -451,54 +447,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/lens.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="145" column="26" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/weatherByCountry.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2504">
-          <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lens-indentedtree/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/RealtimeChangeHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="308" column="35" lean-forward="true" selection-start-line="308" selection-start-column="35" selection-end-line="308" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -509,10 +464,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/RealtimeChangeHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/lens.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="145" column="26" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/Config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../lens-indentedtree/test/SampleTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lens-indentedtree/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8547">
+          <caret line="577" column="41" lean-forward="true" selection-start-line="577" selection-start-column="41" selection-end-line="577" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
