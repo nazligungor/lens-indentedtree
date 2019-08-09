@@ -49,7 +49,7 @@ function updateSample(data, subjectAbsolutePath, sample){
   if(data.absolutePath === subjectAbsolutePath){
     if(data.samples && data.samples[sample.name]){
       data.samples[sample.name] = sample;
-      data.samples[sample.name].sampleValue = sample.sampleValue;
+      //data.samples[sample.name].sampleValue = sample.sampleValue;
     }else{
       addSample(data, subjectAbsolutePath, sample);
     }
@@ -79,8 +79,8 @@ function onSampleUpdate(change, data) {
 	// TODO implement me!
 	// For example, you may need to preprocess and update this sample in some
 	// data structure.
-  let subjectAbsolutePath = sample.name.split('|')[0];
-  updateSample(data, subjectAbsolutePath, change);
+  let subjectAbsolutePath = change.new.name.split('|')[0];
+  updateSample(data, subjectAbsolutePath, change.new);
 }
 
 function onSubjectAdd(subject, data) {
